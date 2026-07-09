@@ -2,10 +2,6 @@
 
 Can a song's popularity be predicted using its audio characteristics?
 
-<p align="left">
-  <img src="figures/roc_curve.png" width="750">
-</p>
-
 This project develops and evaluates multiple **logistic regression models** to classify Spotify tracks as **Popular** or **Not Popular** using audio features and playlist metadata. The analysis follows a complete machine learning workflow, from exploratory data analysis through model comparison and evaluation.
 
 ---
