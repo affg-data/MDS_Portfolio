@@ -102,7 +102,6 @@ Predicting_Spotify_Song_Popularity/
 │
 ├── notebook/
 ├── figures/
-├── raw_data/
 └── README.md
 ```
 
