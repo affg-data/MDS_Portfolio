@@ -1,7 +1,7 @@
 # Predicting Spotify Song Popularity
 
 <p align="center">
-  <img src="figures/roc_all_models.png" width="750">
+  <img src="figures/roc_curve.png" width="750">
 </p>
 
 Can a song's popularity be predicted using its audio characteristics?
