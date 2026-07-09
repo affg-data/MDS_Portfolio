@@ -27,7 +27,7 @@ By combining multiple visualization techniques, the project provides both geogra
 A network visualization illustrating crude oil exports from major Persian Gulf producers to importing countries.
 
 <p align="center">
-  <img src="figures/Oil_Flows_Through_the_Strait_of_Hormuz.png" width="850">
+  <img src="figures/Oil_Flows_Through_the_Strait_of_Hormuz.png" width="900">
 </p>
 
 **Purpose**
