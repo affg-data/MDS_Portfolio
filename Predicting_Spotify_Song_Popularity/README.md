@@ -68,7 +68,7 @@ The exploratory analysis examines the structure of the dataset and relationships
 ## Correlation Heatmap
 
 <p align="center">
-  <img src="figures/correlation_heatmap.png" width="750">
+  <img src="figures/correlation_heatmap.png" width="850">
 </p>
 
 The correlation heatmap illustrates the relationships among continuous audio features and track popularity. It helps identify variables that are positively or negatively associated with popularity while also revealing potential multicollinearity among predictors.
@@ -129,13 +129,14 @@ Predicting_Spotify_Song_Popularity/
 ├── figures/
 │   ├── correlation_heatmap.png
 │   ├── roc_all_models.png
-│   └── confusion_matrix.png
+│   ├── confusion_matrix.png
+│   └── class_balance.png
 │
 ├── raw_data/
 │   └── spotify_songs.csv
 │
-├── README.md
-└── requirements.txt
+└── README.md
+
 ```
 
 ---
