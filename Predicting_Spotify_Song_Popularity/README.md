@@ -68,7 +68,7 @@ The exploratory analysis examines the structure of the dataset and relationships
 ## Correlation Heatmap
 
 <p align="center">
-  <img src="figures/correlation_heatmap.png" width="700">
+  <img src="figures/correlation_heatmap.png" width="750">
 </p>
 
 The correlation heatmap illustrates the relationships among continuous audio features and track popularity. It helps identify variables that are positively or negatively associated with popularity while also revealing potential multicollinearity among predictors.
@@ -84,7 +84,7 @@ The models were compared using Receiver Operating Characteristic (ROC) analysis 
 ## ROC Curve Comparison
 
 <p align="center">
-  <img src="figures/roc_all_models.png" width="700">
+  <img src="figures/roc_curve.png" width="750">
 </p>
 
 The figure compares the ROC curves for all eight logistic regression models.
@@ -98,7 +98,7 @@ Model 4, which combines continuous and categorical predictors using an additive 
 ## Confusion Matrix
 
 <p align="center">
-  <img src="figures/model_4_confusion_matrix.png" width="450">
+  <img src="figures/model_4_confusion_matrix.png" width="800">
 </p>
 
 The confusion matrix summarizes the classification performance of the selected logistic regression model by comparing predicted and actual song popularity labels. It highlights correctly classified observations as well as false positives and false negatives, providing insight into the model's prediction accuracy.
