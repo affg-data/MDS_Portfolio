@@ -107,13 +107,13 @@ The project uses publicly available data from:
 ```
 Strait_of_Hormuz_Data_Story/
 │
-├── notebooks/
+├── notebook/
 ├── figures/
 ├── raw data/
 └── README.md
 ```
 
-- **notebooks/** – Data preparation and visualization notebooks.
+- **notebook/** – Data preparation and visualization notebooks.
 - **figures/** – Exported charts and maps used in the data story.
 
 ---
