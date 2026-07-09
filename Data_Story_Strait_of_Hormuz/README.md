@@ -26,6 +26,10 @@ By combining multiple visualization techniques, the project provides both geogra
 
 A network visualization illustrating crude oil exports from major Persian Gulf producers to importing countries.
 
+<p align="center">
+  <img src="figures/Oil_Flows_Through_the_Strait_of_Hormuz.png" width="850">
+</p>
+
 **Purpose**
 
 - Visualize global oil trade flows.
@@ -38,6 +42,10 @@ A network visualization illustrating crude oil exports from major Persian Gulf p
 
 A choropleth map showing each country's dependence on crude oil transported through the Strait.
 
+<p align="center">
+  <img src="figures/Global_Exposure_to_Strait_of_Hormuz_Oil_Flows.png" width="850">
+</p>
+
 **Purpose**
 
 - Compare national exposure to potential disruptions.
@@ -49,6 +57,10 @@ A choropleth map showing each country's dependence on crude oil transported thro
 ### 3. Disruption Scenario Analysis
 
 A horizontal stacked bar chart modeling the regional distribution of oil imports under a hypothetical disruption to shipments through the Strait.
+
+<p align="center">
+  <img src="figures/Strait_of_Hormuz_Shock Scenario_Global_Oil_Supply_Decomposition.png" width="850">
+</p>
 
 **Purpose**
 
@@ -76,8 +88,6 @@ The project uses publicly available data from:
 
 - U.S. Energy Information Administration (EIA)
 - Vortexa Tanker Tracking Data
-- Natural Earth (Country Boundaries)
-- World Bank (Country Reference Data, where applicable)
 
 ---
 
