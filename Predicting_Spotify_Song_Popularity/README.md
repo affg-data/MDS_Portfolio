@@ -1,6 +1,6 @@
 # Predicting Spotify Song Popularity
 
-<p align="center">
+<p align="left">
   <img src="figures/roc_curve.png" width="750">
 </p>
 
