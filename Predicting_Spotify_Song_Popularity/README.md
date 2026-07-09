@@ -1,26 +1,32 @@
 # Predicting Spotify Song Popularity
 
-Predicting whether a song will become popular is a challenging machine learning problem because popularity is influenced by many musical and non-musical factors. This project explores whether Spotify audio features and playlist metadata can be used to classify songs as **popular** or **not popular** using logistic regression.
+<p align="center">
+  <img src="figures/roc_all_models.png" width="750">
+</p>
 
-The analysis follows a complete binary classification workflow, including exploratory data analysis, feature engineering, model development, model comparison, and performance evaluation.
+Can a song's popularity be predicted using its audio characteristics?
+
+...
+
+This project develops and evaluates multiple **logistic regression models** to classify Spotify tracks as **Popular** or **Not Popular** using audio features and playlist metadata. The analysis follows a complete machine learning workflow, from exploratory data analysis through model comparison and evaluation.
 
 ---
 
 ## Project Objective
 
-The objective of this project is to develop and evaluate logistic regression models that predict song popularity based on measurable audio characteristics and playlist information.
+The goal of this project is to investigate whether measurable musical characteristics can be used to predict song popularity and to determine which combination of features produces the best-performing logistic regression model.
 
 Key questions explored include:
 
-- Which audio features are associated with popular songs?
-- Can logistic regression effectively classify song popularity?
-- Which combination of predictors provides the best predictive performance?
+- Which audio features are most associated with song popularity?
+- Can logistic regression effectively classify popular and non-popular songs?
+- Which model specification provides the strongest predictive performance?
 
 ---
 
 ## Dataset
 
-The project uses the **Spotify Songs** dataset from TidyTuesday, containing thousands of tracks with audio characteristics, playlist information, and popularity scores.
+The analysis uses the **Spotify Songs** dataset from TidyTuesday, containing thousands of tracks with audio features, playlist information, and popularity scores.
 
 ### Features include
 
@@ -39,13 +45,13 @@ The project uses the **Spotify Songs** dataset from TidyTuesday, containing thou
 - Playlist Genre
 - Playlist Subgenre
 
-Song popularity was transformed into a **binary target variable** by classifying tracks as either **Popular** or **Not Popular**.
+Song popularity was transformed into a binary target variable by classifying tracks as either **Popular** or **Not Popular**.
 
 ---
 
 ## Project Workflow
 
-The notebook follows a complete machine learning pipeline:
+The project follows a complete machine learning pipeline:
 
 1. Data cleaning and preprocessing
 2. Exploratory Data Analysis (EDA)
@@ -53,65 +59,55 @@ The notebook follows a complete machine learning pipeline:
 4. Logistic regression model development
 5. Model comparison
 6. Model evaluation
-7. Prediction and interpretation
+7. Interpretation of results
 
 ---
 
-## Exploratory Data Analysis
+# Exploratory Data Analysis
 
-The EDA examines both the structure of the dataset and relationships among variables through:
+The exploratory analysis examines the structure of the dataset and relationships among variables using summary statistics and visualizations.
 
-- Dataset overview
-- Missing value analysis
-- Class balance
-- Distribution of continuous variables
-- Correlation analysis
-- Feature relationships
-- Boxplots and scatterplots
-
-### Correlation Matrix
+## Correlation Heatmap
 
 <p align="center">
   <img src="figures/correlation_heatmap.png" width="700">
 </p>
 
-The correlation heatmap highlights relationships among continuous audio features and identifies variables that are positively or negatively associated with song popularity.
+The correlation heatmap illustrates the relationships among continuous audio features and track popularity. It helps identify variables that are positively or negatively associated with popularity while also revealing potential multicollinearity among predictors.
 
 ---
 
-## Model Development
+# Model Development
 
-Several logistic regression models were developed using different combinations of predictor variables, ranging from simple baseline models to more comprehensive specifications that incorporate both continuous and categorical features.
+Eight logistic regression models were developed using different combinations of continuous variables, categorical variables, interaction terms, and polynomial features.
 
-Model performance was compared using classification metrics and ROC analysis to identify the strongest-performing model.
+The models were compared using Receiver Operating Characteristic (ROC) analysis to determine which specification produced the strongest classification performance.
 
----
-
-## Model Evaluation
-
-The final logistic regression model was evaluated using a confusion matrix and Receiver Operating Characteristic (ROC) curve.
-
-### Confusion Matrix
+## ROC Curve Comparison
 
 <p align="center">
-  <img src="figures/model_4_confusion_matrix.png" width="700">
+  <img src="figures/roc_all_models.png" width="700">
 </p>
 
-The confusion matrix summarizes the classification results by comparing predicted and actual song popularity labels, illustrating both correct classifications and prediction errors.
+The figure compares the ROC curves for all eight logistic regression models.
+
+Model 4, which combines continuous and categorical predictors using an additive specification, achieved the highest performance with an **Area Under the Curve (AUC) of 0.648** and was selected as the final model.
 
 ---
 
-### ROC Curve
+# Final Model Evaluation
+
+## Confusion Matrix
 
 <p align="center">
-  <img src="figures/roc_curve.png" width="700">
+  <img src="figures/model_4_confusion_matrix.png" width="450">
 </p>
 
-The ROC curve evaluates the model's ability to distinguish between popular and non-popular songs across different classification thresholds. The final model achieved an **Area Under the Curve (AUC) of 0.648**, indicating moderate predictive performance above random guessing.
+The confusion matrix summarizes the classification performance of the selected logistic regression model by comparing predicted and actual song popularity labels. It highlights correctly classified observations as well as false positives and false negatives, providing insight into the model's prediction accuracy.
 
 ---
 
-## Technologies
+# Technologies
 
 - Python
 - Pandas
@@ -124,7 +120,7 @@ The ROC curve evaluates the model's ability to distinguish between popular and n
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 Predicting_Spotify_Song_Popularity/
@@ -134,25 +130,38 @@ Predicting_Spotify_Song_Popularity/
 │
 ├── figures/
 │   ├── correlation_heatmap.png
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   └── class_balance.png
+│   ├── roc_all_models.png
+│   └── confusion_matrix.png
 │
 ├── raw_data/
 │   └── spotify_songs.csv
 │
-└──README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## Key Takeaways
+# Key Results
 
-- Audio characteristics contain useful information for predicting song popularity.
-- Logistic regression provides an interpretable baseline for binary music classification.
-- Combining multiple predictor types improves classification performance over simpler models.
-- While the final model demonstrates meaningful predictive ability (AUC = **0.648**), song popularity is influenced by additional factors beyond audio features alone, including marketing, artist recognition, and listener behavior.
+- Built and compared **eight logistic regression models** for binary song popularity classification.
+- Model performance improved by incorporating both continuous and categorical predictors.
+- The best-performing model achieved an **AUC of 0.648**, outperforming simpler baseline models.
+- Audio characteristics provide useful predictive information, although song popularity is also influenced by factors not captured in the dataset, such as marketing, artist popularity, and listener behavior.
 
 ---
 
-*This project was completed as part of the Master of Data Science program at the University of Pittsburgh. It demonstrates the application of logistic regression to a real-world music dataset while following a complete machine learning workflow from exploratory data analysis through model evaluation.*
+# Future Improvements
+
+Potential enhancements include:
+
+- Random Forest and Gradient Boosting models
+- XGBoost or LightGBM
+- Hyperparameter optimization
+- Feature selection techniques
+- Class imbalance handling
+- Model explainability using SHAP values
+
+---
+
+*This project was completed as part of the Master of Data Science program at the University of Pittsburgh. It demonstrates a complete supervised machine learning workflow, including exploratory data analysis, feature engineering, model comparison, and logistic regression model evaluation.*
