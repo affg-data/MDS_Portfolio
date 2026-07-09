@@ -1,0 +1,7 @@
+step,value_mbpd,step_type,percent_global_supply,notes
+Global Oil Supply,102,baseline,100.00%,Approximate global oil supply baseline
+Hormuz Flow Disruption,-20.3,shock,-19.90%,Illustrative full disruption of Hormuz flows
+Saudi East-West Available Bypass,1.5,mitigation,1.50%,Estimated available Saudi reroute capacity
+UAE Fujairah Available Bypass,1.1,mitigation,1.10%,Estimated available UAE bypass capacity
+Other Mitigation (Illustrative: Storage + Demand),2,mitigation,2.00%,Illustrative lower-bound estimate based on historical emergency releases and demand response
+Net Available Supply,86.3,total,84.60%,Implied remaining global supply after disruption and mitigation

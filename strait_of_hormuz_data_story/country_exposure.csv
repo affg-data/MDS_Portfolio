@@ -1,0 +1,10 @@
+country,hormuz_crude_condensate_mbpd,iso3,region,share_of_hormuz_crude_pct,map_ready,exposure_rank,year,metric_note
+China,4.8,CHN,Asia,33.6,TRUE,1,2024,Market-specific destination with ISO3 code; use in choropleth.
+India,1.9,IND,Asia,13.3,TRUE,3,2024,Market-specific destination with ISO3 code; use in choropleth.
+South Korea,1.7,KOR,Asia,11.9,TRUE,4,2024,Market-specific destination with ISO3 code; use in choropleth.
+Japan,1.5,JPN,Asia,10.5,TRUE,5,2024,Market-specific destination with ISO3 code; use in choropleth.
+other Asia & Oceania,2.1,,Asia & Oceania,14.7,FALSE,2,2024,Aggregate regional bucket; keep in summary tables but exclude from choropleth.
+Europe,0.7,,Europe,4.9,FALSE,6,2024,Aggregate regional bucket; keep in summary tables but exclude from choropleth.
+United States,0.5,USA,North America,3.5,TRUE,7,2024,Market-specific destination with ISO3 code; use in choropleth.
+Saudi Arabia,0.2,SAU,Middle East,1.4,TRUE,8,2024,Market-specific destination with ISO3 code; use in choropleth.
+Other,0.9,,,6.3,FALSE,9,2024,Aggregate regional bucket; keep in summary tables but exclude from choropleth.
